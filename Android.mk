@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(BUILD_TWRP), true)
+
 LOCAL_PATH := $(call my-dir)
 
 TARGET_RECOVERY_GUI := true
@@ -351,3 +353,4 @@ ifeq ($(TW_INCLUDE_FB2PNG), true)
 endif
 
 commands_recovery_local_path :=
+endif
